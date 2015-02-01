@@ -1,0 +1,9 @@
+{
+  "name": "angular-gettext-exemplo",
+  "version": "0.0.0",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-angular-gettext": "^2.1.0"
+  },
+  "devDependencies": {}
+}

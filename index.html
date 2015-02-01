@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app-traducao">
+<head>
+  <meta charset="UTF-8">
+  <title>angular-gettext-exemplo</title>
+</head>
+<body ng-controller="Traducao">
+
+  <button ng-click="ChangeLanguage('us')">Original</button>
+  <button ng-click="ChangeLanguage('pt_BR')">Português (Brasil)</button>
+  <button ng-click="ChangeLanguage('es')">Espanhol</button>
+  
+  <div title="{{title | translate}}" translate>My first translation</div>
+
+  <div>{{name | translate}} Thiago Alvernaz</div> 
+
+  <div translate>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ullam, nesciunt et, voluptates accusantium, veritatis quasi eius neque est voluptatum aperiam blanditiis quos culpa eos cum. Blanditiis officiis quia numquam?
+  </div>
+  
+  <!-- scripts -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+  <script src="app-traducao.js"></script>
+  <script src="translations/pt_br.js"></script>
+  <script src="translations/es.js"></script>
+
+</body>
+</html>
